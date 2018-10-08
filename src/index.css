@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* FilterList */
+.filter {
+  z-index: 1;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+#filter-field {
+  width: 350px;
+  padding: 5px;
+}
+
+.location-list {
+  background: white;
+  border: 1px solid darkgrey;
+  overflow: auto;
+  padding: 0px;
+  margin: 0;
+  max-height: 300px;
+  overflow: auto;
+}
+
+/* ListItem */
+.nav-item {
+  color: blue;
+  cursor: pointer;
+}
+
+/* To acheieve responsive nature added the media queries */
+@media (max-width: 886px) {
+  #filter-field {
+    width: 310px;
+  }
+
+  .location-list {
+    width: 310px;
+    max-height: 200px;
+    overflow: auto;
+  }
+}
